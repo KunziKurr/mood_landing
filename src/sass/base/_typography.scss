@@ -47,3 +47,38 @@
     font-family: "Saudagar";
     src: url("../../assets/fonts/Saudagar.ttf");
 }
+
+.sub_heading {
+    font-family: LeGrandRegular-Regular;
+    font-size: 5rem;
+    color: #000;
+    font-weight: unset;
+    text-align: center;
+    &.white {
+        color: #fff;
+    }
+}
+
+.p_content {
+    font-size: 1.7rem;
+    font-family: Avenir-Book;
+    color: #707070;
+    font-weight: unset;
+    width: 50vw;
+    text-align: center;
+    margin: 2rem 0;
+    &.white {
+        color: #fff;
+    }
+}
+
+.btn_primary {
+    color: #fff;
+    border: none;
+    font-family: LeGrandRegular-Regular;
+    width: fit-content;
+    font-size: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    text-align: center;
+}

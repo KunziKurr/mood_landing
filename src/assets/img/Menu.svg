@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.367" height="20" viewBox="0 0 30.367 20">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c9883f"/>
+      <stop offset="0.05" stop-color="#d59e55"/>
+      <stop offset="0.09" stop-color="#dbad63"/>
+      <stop offset="0.15" stop-color="#e7c479"/>
+      <stop offset="0.2" stop-color="#f3da8a"/>
+      <stop offset="0.25" stop-color="#fef1a0"/>
+      <stop offset="0.3" stop-color="#f3da8a"/>
+      <stop offset="0.35" stop-color="#e7c479"/>
+      <stop offset="0.41" stop-color="#dbad63"/>
+      <stop offset="0.46" stop-color="#d59e55"/>
+      <stop offset="0.51" stop-color="#dbad63"/>
+      <stop offset="0.56" stop-color="#dbad63"/>
+      <stop offset="0.61" stop-color="#e7c479"/>
+      <stop offset="0.66" stop-color="#f3da8a"/>
+      <stop offset="0.72" stop-color="#fef1a0"/>
+      <stop offset="0.78" stop-color="#f3da8a"/>
+      <stop offset="0.84" stop-color="#e7c479"/>
+      <stop offset="0.89" stop-color="#dbad63"/>
+      <stop offset="0.95" stop-color="#dbad63"/>
+      <stop offset="1" stop-color="#d59e55"/>
+    </linearGradient>
+  </defs>
+  <g id="Menu" transform="translate(-10.5 -17.84)">
+    <path id="Path_5" data-name="Path 5" d="M11.559,19.959H25.684a1.059,1.059,0,0,0,0-2.119H11.559a1.059,1.059,0,1,0,0,2.119Z" fill="url(#linear-gradient)"/>
+    <path id="Path_4" data-name="Path 4" d="M40.867,31.559A1.059,1.059,0,0,0,39.808,30.5H11.559a1.059,1.059,0,0,0,0,2.119H39.808A1.059,1.059,0,0,0,40.867,31.559Z" transform="translate(0 -3.719)" fill="url(#linear-gradient)"/>
+    <path id="Path_3" data-name="Path 3" d="M45.684,43.16H31.559a1.059,1.059,0,0,0,0,2.119H45.684a1.059,1.059,0,0,0,0-2.119Z" transform="translate(-5.876 -7.439)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

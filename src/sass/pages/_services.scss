@@ -1,0 +1,288 @@
+.services {
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #f4f4f4;
+    &_wrapper {
+        width: inherit;
+        background-color: #f4f4f4;
+        &_header {
+            height: 70vh;
+            background-image: linear-gradient(to right, #0000008d, #0000008d), url(../../assets/img/front_facer.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 2rem;
+            &_subheadings {
+                font-family: LeGrandRegular-Regular;
+                font-size: 6rem;
+                color: #fff;
+                font-weight: normal;
+            }
+            &_btn {
+                color: #E6CB88;
+                border: none;
+                border-bottom: 1px solid #E6CB88;
+                font-family: LeGrandRegular-Regular;
+                width: fit-content;
+                font-size: 3rem;
+                background-color: unset;
+            }
+        }
+        // welcome
+        &_welcome {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem 0;
+            background-color: #f4f4f4;
+            &_heading {
+                font-family: LeGrandBold-Regular;
+                font-size: 5rem;
+                color: #000;
+                font-weight: unset;
+            }
+            & .liner {
+                &:first-child {
+                    margin-top: 5rem;
+                }
+                height: 0.2rem;
+                width: 15vw;
+                background-color: #E6CB88;
+                margin: 1.5rem 0;
+            }
+            &_p {
+                font-size: 1.7rem;
+                font-family: Avenir-Book;
+                color: #707070;
+                font-weight: unset;
+                width: 50vw;
+                text-align: center;
+                margin: 2rem 0;
+            }
+        }
+        // transformation
+        &_transformation {
+            display: flex;
+            width: 100%;
+            &_wrapper {
+                width: inherit;
+                margin-block: 4rem;
+                &_heading {
+                    text-align: center;
+                    flex-direction: column;
+                    display: flex;
+                    width: -moz-fit-content;
+                    margin: 0 auto;
+                    font-family: LeGrandRegular-Regular;
+                    font-size: 4.8rem;
+                    color: #000;
+                    font-weight: unset;
+                    text-transform: capitalize !important;
+                    & span {
+                        margin-top: -1.7%;
+                        margin-left: 12.9%;
+                    }
+                }
+                &_services {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    place-content: center;
+                    place-items: center;
+                    & .service {
+                        width: 100%;
+                        height: 70vh;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        row-gap: 2rem;
+                        background-size: cover;
+                        background-position: top;
+                        &:first-child {
+                            background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/ladies.png);
+                        }
+                        &:nth-child(2) {
+                            background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/men.png);
+                        }
+                        &:nth-child(3) {
+                            background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/massage.png);
+                        }
+                        &_heading {
+                            font-family: LeGrandBold-Regular;
+                            font-size: 4rem;
+                            color: #fff;
+                            font-weight: unset;
+                            margin-top: 1rem;
+                            margin-bottom: 2rem;
+                        }
+                        &_line {
+                            height: 0.2rem;
+                            width: 15vw;
+                            background-color: #E6CB88;
+                            margin: 1.05rem 0
+                        }
+                        &_btn {
+                            color: #fff;
+                            border: none;
+                            font-family: LeGrandRegular-Regular;
+                            width: fit-content;
+                            font-size: 3rem;
+                            background-color: unset;
+                        }
+                    }
+                }
+            }
+        }
+        // meet
+        &_meet {
+            width: inherit;
+            &_wrapper {
+                &_heading {
+                    font-family: LeGrandRegular-Regular;
+                    font-size: 5rem;
+                    color: #000;
+                    font-weight: unset;
+                    text-align: center;
+                    margin: 4rem 0;
+                }
+                & .member {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 3rem 0;
+                    &_initials {
+                        margin-top: -7rem;
+                        text-align: left;
+                        &_name {
+                            font-family: LeGrandRegular-Regular;
+                            font-size: 3.5rem;
+                            color: #707070;
+                        }
+                        &_roles {
+                            border-left: 1px solid #79797a;
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 1rem;
+                            row-gap: .5rem;
+                            margin-top: 1rem;
+                            &_role {
+                                font-size: 1.6rem;
+                                font-family: Avenir-Roman;
+                                color: #707070;
+                            }
+                        }
+                    }
+                    &_desc {
+                        font-size: 1.6rem;
+                        font-family: Avenir-Roman;
+                        color: #707070;
+                        text-align: center;
+                    }
+                    & svg {
+                        width: 5rem;
+                        height: 5rem;
+                        fill: #707070
+                    }
+                    & img {
+                        height: 42vh;
+                        width: fit-content;
+                    }
+                    &_wrapper {
+                        width: 75vw;
+                        display: grid;
+                        grid-template-columns: 1fr 2fr 1fr;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        &_banner {
+            width: inherit;
+            &_wrapper {
+                width: 100%;
+                background-image: linear-gradient(to bottom, #0000007c, #000000c7), url(../../assets/img/quote.png);
+                height: 50vh;
+                background-size: cover;
+                background-position: top;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                row-gap: 3rem;
+                flex-direction: column;
+                & p {
+                    position: relative;
+                    &::after {
+                        margin-left: 6rem;
+                    }
+                    &::before {
+                        margin-left: -9rem;
+                    }
+                    &::before,
+                    &::after {
+                        content: "";
+                        background-color: #fff;
+                        width: 6rem;
+                        height: 0.1rem;
+                        position: absolute;
+                        bottom: 0;
+                        top: 50%;
+                    }
+                }
+            }
+        }
+        &_consult {
+            width: inherit;
+            &_wrapper {
+                width: 100%;
+                display: flex;
+                margin: 10vh 0;
+                &_container {
+                    width: 45%;
+                    margin: 0 auto;
+                    & .p_content {
+                        width: 70%;
+                        margin: 0 auto;
+                    }
+                    & .consult {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 3rem;
+                        justify-content: center;
+                        width: 70%;
+                        padding-top: 4rem;
+                        &_input {
+                            border: none;
+                            border-bottom: 2px solid #79797a;
+                            font-size: 1.7rem;
+                            font-family: Avenir-Book;
+                            color: #707070;
+                            padding: 1rem 0;
+                            background-color: transparent;
+                            outline: none;
+                        }
+                        &_btns {
+                            display: flex;
+                            flex-direction: row;
+                            & .btn_primary {
+                                background-color: #2A2824;
+                                padding: 1rem 2.5rem;
+                            }
+                            & svg {
+                                width: 5rem;
+                                height: 5rem;
+                                fill: #707070
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,9 +1,12 @@
 
-import Header from './app/commons/_header'
+import Landing from './app/sects/_landing'
+import Header from './app/commons/_header';
+import UrbanLux from './app/sects/_urban_lux';
+import Services from './app/sects/_services';
 function App() {
   return (
     <div className="mood_landing">
-      <Header />
+      <Services />
     </div>
   );
 }
