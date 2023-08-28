@@ -1,7 +1,11 @@
+import { useLocation } from 'react-router-dom'
+
 import Headers from '../commons/_header'
 import Meet from '../../assets/img/meet.png'
 import Footer from '../commons/_footer';
 const Services = () => {
+    let location = useLocation();
+    // console.log(location.state.from);
     return(
     <>
         <div className="services">

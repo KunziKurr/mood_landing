@@ -5,6 +5,34 @@
     &_wrapper {
         width: inherit;
         background-color: #f4f4f4;
+        &_services {
+            &_ul {
+                width: 60%;
+                border: 1px solid;
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content: space-around;
+                font-size: 1.5rem;
+                margin-top: 3rem;
+                &_li {
+                    width: 100%;
+                    border: 0.2px solid #79797a;
+                    height: 100%;
+                    padding: 0.4rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-top: unset;
+                    border-bottom: unset;
+                    font-family: 'Avenir-Roman';
+                    &.a {
+                        background-color: #000;
+                        color: #E6CB88;
+                    }
+                }
+            }
+        }
         &_header {
             height: 70vh;
             background-image: linear-gradient(to right, #0000008d, #0000008d), url(../../assets/img/front_facer.png);
@@ -284,5 +312,72 @@
                 }
             }
         }
+    }
+    &.desc {
+        .member_initials {
+            margin-top: -7rem;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            row-gap: 1rem;
+        }
+    }
+}
+
+.charges_list {
+    width: 100%;
+}
+
+.services_quote_list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    list-style: none;
+    &_l {
+        font-size: 1.4rem;
+        border-bottom: 2px solid #1d1c1c;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        font-family: "Avenir-Roman";
+        & span {
+            &.price {
+                color: #000;
+                font-weight: Bold;
+            }
+            &:first-child {
+                color: #79797a;
+            }
+        }
+    }
+    & .consult_btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2rem;
+        & .btn_primary {
+            background-color: #000;
+            padding: 1rem 4rem;
+            margin: 2rem 0;
+        }
+    }
+}
+
+.base_container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+    & p {
+        font-size: 1.4rem;
+        width: 50%;
+        text-align: center;
+        font-family: "Avenir-Roman";
     }
 }

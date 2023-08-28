@@ -61,15 +61,21 @@
                     background-color: unset;
                     outline: none;
                     cursor: pointer;
+                    color: #f0d485;
                     & svg {
                         height: 3rem;
                         width: 3rem;
+                        fill: currentColor;
                     }
                     &.close {
                         z-index: 4;
                         color: #f0d485;
                         font-family: Saudagar;
                         font-size: 5.5rem;
+                    }
+                    &.header_services {
+                        display: flex;
+                        align-items: center;
                     }
                 }
             }
@@ -80,7 +86,7 @@
 .mood_header_links {
     position: fixed;
     z-index: 2;
-    background-color: #1D1D1D;
+    background-color: #1d1d1dfa;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -94,12 +100,19 @@
             display: flex;
             list-style: none;
             column-gap: 2.5rem;
-            &_li {
+            &_li,
+            a {
                 color: #fff;
                 list-style: none;
                 font-family: LeGrandRegular-Regular;
                 font-size: 5.5rem;
                 cursor: pointer;
+                text-decoration: none;
+                &.active {
+                    color: #C2A764;
+                    // pointer-events: none;
+                    text-decoration: underline;
+                }
             }
         }
     }
