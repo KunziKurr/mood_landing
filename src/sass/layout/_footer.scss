@@ -1,15 +1,32 @@
 .footer {
     background-color: #000;
     height: 30vh;
+    @include respond-below(sm) {
+        height: auto;
+    }
     &_wrapper {
         height: 23vh;
         background-color: #707070;
         padding: 0 10vw;
         padding-top: 3rem;
+        @include respond-below(sm) {
+            height: auto;
+            padding: 0 4vw;
+            padding-top: 3rem;
+            width: 100%;
+        }
         &_container {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             column-gap: 5rem;
+            @include respond-below(sm) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 4rem;
+                row-gap: 5rem;
+                place-content: center;
+                padding: 1rem 0rem 3rem 0;
+            }
             &_cont {
                 display: flex;
                 flex-direction: column;
