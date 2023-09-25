@@ -4,6 +4,8 @@ import {
   Route,
   useRoutes,
 } from "react-router-dom";
+import { useEffect, useState } from 'react';
+
 import Landing from './app/sects/_landing'
 import Header from './app/commons/_header';
 import UrbanLux from './app/sects/_urban_lux';
@@ -29,8 +31,24 @@ const App = () => {
 
 
 const AppWrapper = () => {
+     //navbar scroll when active state
+     const [navbar, setNavbar] = useState(false)
+     useEffect(() =>{
+       debugger;
+         changeBackground()
+         // adding the event when scroll change background
+         window.addEventListener("scroll", changeBackground)
+     })
+       const changeBackground = () => {
+     console.log(window.scrollY)
+     if (window.scrollY >= 20) {
+       setNavbar(true)
+     } else {
+       setNavbar(false)
+     }
+   }
   return (
-    <div className="mood_landing">
+    <div className={navbar ? "mood_landing active" :"mood_landing" }>
     <Router>
       <App />
     </Router>

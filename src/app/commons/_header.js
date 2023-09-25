@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import logo from '../../assets/img/logo.png'
 import svgService from '../../svg_service'
 import { NavLink } from 'react-router-dom';
@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 const  Header = () => {
     const [showMenu, setShowMenu] = useState(0)
     const [showServices, setshowServices] = useState(0)
+   
     return (
       <div className="mood_header">
         <section className="mood_header_menu">

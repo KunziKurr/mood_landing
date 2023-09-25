@@ -54,6 +54,9 @@
     color: #000;
     font-weight: unset;
     text-align: center;
+    @include respond-below(xs) {
+        font-size: 3.5rem;
+    }
     &.white {
         color: #fff;
     }
