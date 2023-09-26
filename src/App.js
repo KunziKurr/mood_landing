@@ -48,11 +48,12 @@ const AppWrapper = () => {
      }
    }
   return (
-    <div className={navbar ? "mood_landing active" :"mood_landing" }>
     <Router>
+    <div className={navbar ? "mood_landing active" :"mood_landing" }>
       <App />
-    </Router>
     </div>
+
+    </Router>
   );
 }
 
