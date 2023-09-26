@@ -44,7 +44,7 @@
             flex-direction: column;
             row-gap: 2rem;
             position: relative;
-            @include respond-below(xs) {
+            @include respond-below(sm) {
                 height: 60vh;
             }
             &_subheadings {
@@ -52,7 +52,7 @@
                 font-size: 6rem;
                 color: #fff;
                 font-weight: normal;
-                @include respond-below(xs) {
+                @include respond-below(sm) {
                     font-size: 4rem;
                 }
             }
@@ -88,7 +88,7 @@
                 width: 15vw;
                 background-color: #fbbea1;
                 margin: 1.5rem 0;
-                @include respond-below(xs) {
+                @include respond-below(sm) {
                     width: 70vw;
                 }
             }
@@ -100,7 +100,7 @@
                 width: 50vw;
                 text-align: center;
                 margin: 2rem 0;
-                @include respond-below(xs) {
+                @include respond-below(sm) {
                     width: 90vw;
                 }
             }
@@ -134,7 +134,7 @@
                     grid-template-columns: 1fr 1fr 1fr;
                     place-content: center;
                     place-items: center;
-                    @include respond-below(xs) {
+                    @include respond-below(sm) {
                         display: flex;
                         flex-direction: column;
                     }
@@ -148,7 +148,7 @@
                         row-gap: 2rem;
                         background-size: cover;
                         background-position: top;
-                        @include respond-below(xs) {
+                        @include respond-below(sm) {
                             height: 45vh;
                         }
                         &:first-child {
@@ -173,7 +173,7 @@
                             width: 15vw;
                             background-color: #fbbea1;
                             margin: 1.05rem 0;
-                            @include respond-below(xs) {
+                            @include respond-below(sm) {
                                 width: 50vw;
                             }
                         }
@@ -208,7 +208,7 @@
                     justify-content: center;
                     flex-direction: column;
                     margin: 3rem 0;
-                    @include respond-below(xs) {
+                    @include respond-below(sm) {
                         // align-items: start;
                         justify-content: start;
                     }
@@ -248,7 +248,7 @@
                     & img {
                         height: 42vh;
                         width: fit-content;
-                        @include respond-below(xs) {
+                        @include respond-below(sm) {
                             height: 50vh;
                         }
                     }
@@ -257,7 +257,7 @@
                         display: grid;
                         grid-template-columns: 1fr 2fr 1fr;
                         margin: 0 auto;
-                        @include respond-below(xs) {
+                        @include respond-below(sm) {
                             grid-template-columns: 1fr;
                             width: 95vw;
                         }
@@ -278,7 +278,7 @@
                 justify-content: center;
                 row-gap: 3rem;
                 flex-direction: column;
-                @include respond-below(xs) {
+                @include respond-below(sm) {
                     height: 40vh;
                 }
                 & p {
@@ -288,7 +288,7 @@
                     }
                     &::before {
                         margin-left: -9rem;
-                        @include respond-below(xs) {
+                        @include respond-below(sm) {
                             margin-left: -14rem;
                         }
                     }
@@ -301,7 +301,7 @@
                         position: absolute;
                         bottom: 0;
                         top: 50%;
-                        @include respond-below(xs) {
+                        @include respond-below(sm) {
                             width: 8rem;
                         }
                     }
