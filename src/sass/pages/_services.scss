@@ -34,8 +34,8 @@
             }
         }
         &_header {
-            height: 70vh;
-            background-image: linear-gradient(to right, #0000008d, #0000008d), url(../../assets/img/front_facer.png);
+            height: 75vh;
+            // background-image: linear-gradient(to right, #0000008d, #0000008d), url(../../assets/img/front_facer.png);
             background-size: cover;
             background-position: center;
             display: flex;
@@ -43,6 +43,7 @@
             justify-content: center;
             flex-direction: column;
             row-gap: 2rem;
+            position: relative;
             @include respond-below(xs) {
                 height: 60vh;
             }
@@ -443,4 +444,17 @@
         text-align: center;
         font-family: "Avenir-Roman";
     }
+}
+
+
+
+.non_slider{
+position: relative;
+    height: inherit;
+    width: 100vw;
+    background-image: linear-gradient(to right, #0000008d, #0000008d);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }

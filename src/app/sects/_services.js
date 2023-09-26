@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom'
+import ImageGallery from "react-image-gallery";
 
 import Headers from '../commons/_header'
 import Meet from '../../assets/img/meet.png'
@@ -6,16 +7,36 @@ import Footer from '../commons/_footer';
 const Services = () => {
     let location = useLocation();
     // console.log(location.state.from);
+
+    const images = [
+        {
+          original: "https://picsum.photos/id/1018/1000/600/",
+        //   thumbnail: "https://picsum.photos/id/1018/250/150/",
+        },
+        {
+          original: "https://picsum.photos/id/1015/1000/600/",
+        //   thumbnail: "https://picsum.photos/id/1015/250/150/",
+        },
+        {
+          original: "https://picsum.photos/id/1019/1000/600/",
+        //   thumbnail: "https://picsum.photos/id/1019/250/150/",
+        },
+      ]
+
     return(
     <>
         <div className="services">
         <Headers />
             <div className="services_wrapper">
               <div className="services_wrapper_header">
-                <h6 className="services_wrapper_header_subheadings">MOOD HAIR</h6>
+              
+                 <ImageGallery items={images} infite={true} showBullets={false} autoPlay={true} showFullscreenButton={false} showPlayButton={true}/>
+               <div className="non_slider">
+               <h6 className="services_wrapper_header_subheadings">MOOD HAIR</h6>
                 <h6 className="services_wrapper_header_subheadings">EXTENSIONS STUDIO</h6>
                 <h6 className="services_wrapper_header_subheadings">FROM KES 850</h6>
                 <button className="services_wrapper_header_btn">Book Now</button>
+               </div>
               </div>
               {/* welcome */}
               <div className="services_wrapper_welcome">
