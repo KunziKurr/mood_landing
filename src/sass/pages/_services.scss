@@ -458,3 +458,9 @@ position: relative;
     flex-direction: column;
     justify-content: center;
 }
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+    @include respond-below(sm){
+    height: 60vh!important;
+    }
+}
