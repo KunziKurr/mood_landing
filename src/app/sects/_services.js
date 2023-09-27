@@ -1,33 +1,48 @@
 import { useLocation } from 'react-router-dom'
 import ImageGallery from "react-image-gallery";
+import { Splide, SplideSlider } from '@splidejs/react-splide';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import Headers from '../commons/_header'
 import Meet from '../../assets/img/meet.png'
 import Footer from '../commons/_footer';
+
+import Asset1 from  '../../assets/img/Asset1.svg'
+import Asset2 from  '../../assets/img/2Asset.svg'
+import Asset3 from  '../../assets/img/3Asset.svg'
+import Asset4 from  '../../assets/img/4Asset.svg'
+import Asset5 from  '../../assets/img/5Asset.svg'
+import Asset6 from  '../../assets/img/6Asset.svg'
+
+
 const Services = () => {
     let location = useLocation();
     // console.log(location.state.from);
 
     const images = [
         {
-          original: "../../assets/img/2Asset.svg",
+          original: Asset1,
         //   thumbnail: "https://picsum.photos/id/1018/250/150/",
         },
         {
-            original: "../../assets/img/Asset1.svg",
+            original: Asset2,
         //   thumbnail: "https://picsum.photos/id/1015/250/150/",
         },
         {
-            original: "../../assets/img/3Asset.svg",
+            original: Asset3,
         //   thumbnail: "https://picsum.photos/id/1019/250/150/",
         }, {
-            original: "../../assets/img/4Asset.svg",
+            original: Asset4,
         //   thumbnail: "https://picsum.photos/id/1019/250/150/",
         }, {
-            original: "../../assets/img/5Asset.svg",
+            original: Asset5,
         //   thumbnail: "https://picsum.photos/id/1019/250/150/",
         },{
-            original: "../../assets/img/6Asset.svg",
+            original: Asset6,
         //   thumbnail: "https://picsum.photos/id/1019/250/150/",
         },
       ]
@@ -39,7 +54,17 @@ const Services = () => {
             <div className="services_wrapper">
               <div className="services_wrapper_header">
               
-                 <ImageGallery items={images} infite={true} showBullets={false} autoPlay={true} showFullscreenButton={false} showPlayButton={true}/>
+                 <ImageGallery 
+                    items={images} 
+                    lazyLoad={true} 
+                    infinite={true} 
+                    showBullets={false} 
+                    autoPlay={true} 
+                    showFullscreenButton={false} 
+                    showPlayButton={true}
+                    showNav={false}
+
+                 />
                <div className="non_slider">
                <h6 className="services_wrapper_header_subheadings">MOOD HAIR</h6>
                 <h6 className="services_wrapper_header_subheadings">EXTENSIONS STUDIO</h6>
@@ -94,7 +119,23 @@ const Services = () => {
               <div className="services_wrapper_meet">
                 <div className="services_wrapper_meet_wrapper">
                     <h3 className="services_wrapper_meet_wrapper_heading">Meet Our Team</h3>
-                    <div className="member_wrapper">
+
+                  <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+      <SwiperSlide>
+      <div className="member_wrapper">
                         <div className="member">
                             <div className="member_initials">
                                 <span className="member_initials_name">Beth Awuor</span>
@@ -118,6 +159,47 @@ const Services = () => {
     </svg>
                         </div>
                     </div>
+      </SwiperSlide>
+      <SwiperSlide>
+      <div className="member_wrapper">
+                        <div className="member">
+                            <div className="member_initials">
+                                <span className="member_initials_name">Beth Awuor2</span>
+                                <div className="member_initials_roles">
+                                <span className="member_initials_roles_role">Hair Stylist</span>
+                                <span className="member_initials_roles_role"> Professional Qualified Aesthetician</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="member">
+                           <img src={Meet} alt="Mood team members"  />
+                        </div>
+                        <div className="member">
+                            <p className="member_desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec elementum elit at tortor tincidunt dignissim. Nam eget venenatis erat.
+                                Nam accumsan nisl eget dignissim blandit.
+                            </p>
+                            <svg id="icon-trending_neutral" viewBox="0 0 24 24">
+    <path d="M21.984 12l-3.984 3.984v-3h-15v-1.969h15v-3z"></path>
+    </svg>
+                        </div>
+                    </div>
+      </SwiperSlide>
+    </Swiper>
+
+
+
+
+
+
+
+
+
+
+
+
+                 
                 </div>
               </div>
               {/* middle banner */}
