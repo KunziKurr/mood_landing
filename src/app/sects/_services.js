@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Player } from 'video-react';
 
 import Headers from '../commons/_header'
 import Meet from '../../assets/img/meet.png'
@@ -65,12 +66,12 @@ const Services = () => {
                     showNav={false}
 
                  />
-               <div className="non_slider">
+               {/* <div className="non_slider">
                <h6 className="services_wrapper_header_subheadings">MOOD HAIR</h6>
                 <h6 className="services_wrapper_header_subheadings">EXTENSIONS STUDIO</h6>
                 <h6 className="services_wrapper_header_subheadings">FROM KES 850</h6>
                 <button className="services_wrapper_header_btn">Book Now</button>
-               </div>
+               </div> */}
               </div>
               {/* welcome */}
               <div className="services_wrapper_welcome">
@@ -102,13 +103,13 @@ const Services = () => {
                         </div>
 
                         <div className="service">
-                            <h4 className="service_heading"> BARBER</h4>
+                            <h4 className="service_heading"> Nails</h4>
                             <div className="service_line"></div>
                             <button className="service_btn">View More</button>
                         </div>
 
                         <div className="service">
-                            <h4 className="service_heading">Spa</h4>
+                            <h4 className="service_heading">Eyelashes/Eyebrows</h4>
                             <div className="service_line"></div>
                             <button className="service_btn">View More</button>
                         </div>
@@ -162,28 +163,11 @@ const Services = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className="member_wrapper">
-                        <div className="member">
-                            <div className="member_initials">
-                                <span className="member_initials_name">Beth Awuor2</span>
-                                <div className="member_initials_roles">
-                                <span className="member_initials_roles_role">Hair Stylist</span>
-                                <span className="member_initials_roles_role"> Professional Qualified Aesthetician</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="member">
-                           <img src={Meet} alt="Mood team members"  />
-                        </div>
-                        <div className="member">
-                            <p className="member_desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Donec elementum elit at tortor tincidunt dignissim. Nam eget venenatis erat.
-                                Nam accumsan nisl eget dignissim blandit.
-                            </p>
-                            <svg id="icon-trending_neutral" viewBox="0 0 24 24">
-    <path d="M21.984 12l-3.984 3.984v-3h-15v-1.969h15v-3z"></path>
-    </svg>
-                        </div>
+                     <Player
+      playsInline
+      poster="/assets/poster.png"
+      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+    />
                     </div>
       </SwiperSlide>
     </Swiper>
