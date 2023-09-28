@@ -7,9 +7,12 @@ import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Player } from 'video-react';
-
+import olaples from '../../assets/vids/Olaplex Video.mp4'
+import ReactPlayer from 'react-player/lazy'
 import Headers from '../commons/_header'
 import Meet from '../../assets/img/meet.png'
+import Prod1 from '../../assets/img/prodcut_1.png'
+import Prod2 from '../../assets/img/product_2.png'
 import Footer from '../commons/_footer';
 
 import Asset1 from  '../../assets/img/Asset1.svg'
@@ -119,7 +122,13 @@ const Services = () => {
               {/* meet our team */}
               <div className="services_wrapper_meet">
                 <div className="services_wrapper_meet_wrapper">
-                    <h3 className="services_wrapper_meet_wrapper_heading">Meet Our Team</h3>
+                    <h3 className="services_wrapper_meet_wrapper_heading">Our Product line</h3>
+
+
+
+                    <div className="member_wrapper video_prev">
+      <ReactPlayer playing={true} loop={true} url={olaples} width="100%" height="auto" />
+                    </div>
 
                   <Swiper
         spaceBetween={30}
@@ -137,19 +146,19 @@ const Services = () => {
       >
       <SwiperSlide>
       <div className="member_wrapper">
-                        <div className="member">
+                        {/* <div className="member">
                             <div className="member_initials">
-                                <span className="member_initials_name">Beth Awuor</span>
+                                <span className="member_initials_name">Devines </span>
                                 <div className="member_initials_roles">
                                 <span className="member_initials_roles_role">Hair Stylist</span>
                                 <span className="member_initials_roles_role"> Professional Qualified Aesthetician</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="member">
-                           <img src={Meet} alt="Mood team members"  />
+                           <img src={Prod1} alt="Mood team members"  />
                         </div>
-                        <div className="member">
+                        {/* <div className="member">
                             <p className="member_desc">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Donec elementum elit at tortor tincidunt dignissim. Nam eget venenatis erat.
@@ -158,19 +167,38 @@ const Services = () => {
                             <svg id="icon-trending_neutral" viewBox="0 0 24 24">
     <path d="M21.984 12l-3.984 3.984v-3h-15v-1.969h15v-3z"></path>
     </svg>
-                        </div>
+                        </div> */}
                     </div>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide> 
       <div className="member_wrapper">
-                     <Player
-      playsInline
-      poster="/assets/poster.png"
-      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-    />
+      <div className="member_wrapper">
+                        {/* <div className="member">
+                            <div className="member_initials">
+                                <span className="member_initials_name">Devines </span>
+                                <div className="member_initials_roles">
+                                <span className="member_initials_roles_role">Hair Stylist</span>
+                                <span className="member_initials_roles_role"> Professional Qualified Aesthetician</span>
+                                </div>
+                            </div>
+                        </div> */}
+                        <div className="member">
+                           <img src={Prod2} alt="Mood team members"  />
+                        </div>
+                        {/* <div className="member">
+                            <p className="member_desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec elementum elit at tortor tincidunt dignissim. Nam eget venenatis erat.
+                                Nam accumsan nisl eget dignissim blandit.
+                            </p>
+                            <svg id="icon-trending_neutral" viewBox="0 0 24 24">
+    <path d="M21.984 12l-3.984 3.984v-3h-15v-1.969h15v-3z"></path>
+    </svg>
+                        </div> */}
                     </div>
-      </SwiperSlide>
-    </Swiper>
+                    </div>
+      </SwiperSlide> 
+     </Swiper>
 
 
 
