@@ -1,7 +1,7 @@
+@import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/grid';
 @import 'abstracts/mixins';
-@import 'abstracts/variables';
 @import 'base/animations';
 @import 'base/base';
 @import 'base/typography';
@@ -16,20 +16,18 @@
 @import 'pages/urban_lux';
 @import 'pages/services';
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
-
-
 .image-gallery-content .image-gallery-slide .image-gallery-image {
-    
     max-height: calc(100vh - 25vh) !important;
 }
+
 .image-gallery-slide .image-gallery-image {
     object-fit: cover !important;
 }
+
 .image-gallery {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     height: inherit;
-
 }

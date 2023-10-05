@@ -41,9 +41,9 @@
                 font-weight: normal;
             }
             &_btn {
-                color: #fbbea1;
+                color: $color_base_theme;
                 border: none;
-                border-bottom: 1px solid #fbbea1;
+                border-bottom: 1px solid $color_base_theme;
                 font-family: LeGrandRegular-Regular;
                 width: fit-content;
                 font-size: 3rem;

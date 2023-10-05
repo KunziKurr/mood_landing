@@ -51,7 +51,7 @@
 .sub_heading {
     font-family: LeGrandRegular-Regular;
     font-size: 5rem;
-    color: #000;
+    color: $color_base_theme_dark;
     font-weight: unset;
     text-align: center;
     @include respond-below(sm) {

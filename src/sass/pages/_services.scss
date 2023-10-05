@@ -28,7 +28,7 @@
                     font-family: 'Avenir-Roman';
                     &.a {
                         background-color: #000;
-                        color: #fbbea1;
+                        color: $color_base_theme;
                     }
                 }
             }
@@ -57,9 +57,9 @@
                 }
             }
             &_btn {
-                color: #fbbea1;
+                color: $color_base_theme;
                 border: none;
-                border-bottom: 1px solid #fbbea1;
+                border-bottom: 1px solid $color_base_theme;
                 font-family: LeGrandRegular-Regular;
                 width: fit-content;
                 font-size: 3rem;
@@ -77,7 +77,7 @@
             &_heading {
                 font-family: LeGrandBold-Regular;
                 font-size: 5rem;
-                color: #000;
+                color: $color_base_theme_dark;
                 font-weight: unset;
             }
             & .liner {
@@ -86,7 +86,7 @@
                 }
                 height: 0.2rem;
                 width: 15vw;
-                background-color: #fbbea1;
+                background-color: $color_base_theme;
                 margin: 1.5rem 0;
                 @include respond-below(sm) {
                     width: 70vw;
@@ -120,7 +120,7 @@
                     margin: 0 auto;
                     font-family: LeGrandRegular-Regular;
                     font-size: 4.8rem;
-                    color: #000;
+                    color: $color_base_theme_dark;
                     font-weight: unset;
                     text-transform: capitalize !important;
                     & span {
@@ -171,14 +171,14 @@
                         &_line {
                             height: 0.2rem;
                             width: 15vw;
-                            background-color: #fbbea1;
+                            background-color: $color_base_theme;
                             margin: 1.05rem 0;
                             @include respond-below(sm) {
                                 width: 50vw;
                             }
                         }
                         &_btn {
-                            color: #fbbea1;
+                            color: $color_base_theme;
                             border: none;
                             font-family: LeGrandRegular-Regular;
                             width: fit-content;
@@ -196,7 +196,7 @@
                 &_heading {
                     font-family: LeGrandRegular-Regular;
                     font-size: 5rem;
-                    color: #000;
+                    color: $color_base_theme_dark;
                     font-weight: unset;
                     text-align: center;
                     margin: 4rem 0;
@@ -446,10 +446,8 @@
     }
 }
 
-
-
-.non_slider{
-position: relative;
+.non_slider {
+    position: relative;
     height: inherit;
     width: 100vw;
     background-image: linear-gradient(to right, #0000008d, #0000008d);
@@ -460,12 +458,12 @@ position: relative;
 }
 
 .image-gallery-content .image-gallery-slide .image-gallery-image {
-    @include respond-below(sm){
-    height: 60vh!important;
+    @include respond-below(sm) {
+        height: 60vh!important;
     }
 }
 
-.services_wrapper_meet_wrapper .member_wrapper.video_prev{
+.services_wrapper_meet_wrapper .member_wrapper.video_prev {
     display: flex;
     width: 100vw;
 }

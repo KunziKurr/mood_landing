@@ -36,7 +36,7 @@
                 &_btn {
                     border: none;
                     background-color: unset;
-                    color: #f0d485;
+                    color: $color_base_theme;
                     font-family: Saudagar;
                     font-size: 3.5rem;
                     margin-top: -0.15rem;
@@ -61,7 +61,7 @@
                     background-color: unset;
                     outline: none;
                     cursor: pointer;
-                    color: #f0d485;
+                    color: $color_base_theme;
                     & svg {
                         height: 3rem;
                         width: 3rem;
@@ -69,7 +69,7 @@
                     }
                     &.close {
                         z-index: 4;
-                        color: #f0d485;
+                        color: $color_base_theme;
                         font-family: Saudagar;
                         font-size: 5.5rem;
                     }
@@ -113,7 +113,7 @@
                 cursor: pointer;
                 text-decoration: none;
                 &.active {
-                    color: #C2A764;
+                    color: $color_base_theme;
                     // pointer-events: none;
                     text-decoration: underline;
                 }
