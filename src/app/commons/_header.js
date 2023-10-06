@@ -13,7 +13,10 @@ const  Header = () => {
         <section className="mood_header_menu">
             <div className="mood_header_menu_wrapper">
                 <div className="mood_header_menu_wrapper_logo">
-                    <img src={logo} alt="" srcset="" />
+                <NavLink  to="/">
+                <img src={logo} alt="" srcset="" />
+                </NavLink>
+
                 </div>
                 <div className="mood_header_menu_wrapper_service">
 

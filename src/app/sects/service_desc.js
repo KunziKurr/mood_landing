@@ -12,8 +12,8 @@ const ServicesDesc = () => {
     <>
         <div className="services desc">
         <Headers />
-            <div className="services_wrapper">
-              <div className="services_wrapper_header">
+            <div className="services_wrapper ">
+              <div className="services_wrapper_header service_desc">
                 <h6 className="services_wrapper_header_subheadings">MOOD HAIR</h6>
                 <h6 className="services_wrapper_header_subheadings">EXTENSIONS STUDIO</h6>
                 <h6 className="services_wrapper_header_subheadings">FROM KES 850</h6>

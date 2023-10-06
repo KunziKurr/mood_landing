@@ -7,7 +7,14 @@ const About = () => {
         <div id="landing_lux" className="landing_lux">
         <Header />
             <div className="landing_lux_wrapper">
-              About
+            <div className="landing_wrapper">
+          <div className="landing_wrapper_svg">
+          {svgService.landing_1}
+          </div>
+        <h1 className="landing_wrapper_heading">
+          Relax in Luxury
+        </h1>
+        </div>
             </div>
         </div>
 
