@@ -25,3 +25,33 @@ body {
 .zindex_4 {
     z-index: 4;
 }
+
+.book_now {
+    position: fixed;
+    z-index: 100;
+    bottom: 5rem;
+    right: 2rem;
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    border: none;
+    background-color: $color_button_accent;
+    color: $color-black;
+    font-family: LeGrandBold-Regular;
+    font-size: 4rem;
+    font-weight: unset;
+    & a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        row-gap: 1.3rem;
+        text-decoration: none;
+        color: $color-black;
+    }
+}
+
+button {
+    cursor: pointer;
+}

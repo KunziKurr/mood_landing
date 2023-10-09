@@ -12,7 +12,9 @@ import UrbanLux from './app/sects/_urban_lux';
 import Services from './app/sects/_services';
 import ServicesDesc from './app/sects/service_desc';
 import About from "./app/sects/_about_us";
+import Booking from "./app/sects/_booking";
 import Contact from "./app/sects/_contact_us";
+import { NavLink } from 'react-router-dom';
 
 
 const App = () => {
@@ -23,6 +25,7 @@ const App = () => {
     { path: "about-us", element: <About /> },
     { path: "serve", element: <ServicesDesc /> },
     { path: "contact-us", element: <Contact /> },
+    { path: "booking", element: <Booking /> },
     // ...
   ]);
   return routes;
@@ -51,6 +54,14 @@ const AppWrapper = () => {
     <Router>
     <div className={navbar ? "mood_landing active" :"mood_landing" }>
       <App />
+      <button className="book_now">
+      <NavLink  to="/booking">
+      <span>BOOK</span>
+      <span>NOW</span>
+      </NavLink>
+
+
+      </button>
     </div>
 
     </Router>
