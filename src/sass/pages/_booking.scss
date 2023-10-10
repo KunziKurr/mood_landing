@@ -145,3 +145,49 @@
             }
         }
     }
+    
+    .extras {
+        position: relative;
+        height: 70vh;
+        &_wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            row-gap: 3rem;
+            &_extra {
+                display: flex;
+                flex-direction: row;
+                background-color: #f0ecec;
+                box-shadow: 0px 2px 4px #79797a;
+                max-height: 20vh;
+                &_thumbnail {
+                    & img {
+                        height: inherit;
+                        max-height: 20vh;
+                    }
+                }
+                &_content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    row-gap: 1rem;
+                    padding-left: 5%;
+                    &_p {
+                        font-size: 1.6rem;
+                        font-family: Avenir-Book;
+                    }
+                    &_h2 {
+                        font-size: 2.6rem;
+                        font-family: Saudagar;
+                    }
+                }
+            }
+        }
+    }
+    
+    .checkout {
+        position: relative;
+        & .button_next {
+            position: relative;
+        }
+    }
