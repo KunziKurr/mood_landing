@@ -48,10 +48,10 @@
     src: url("../../assets/fonts/Saudagar.ttf");
 }
 
-.sub_heading {
+.heading_1 {
     font-family: LeGrandRegular-Regular;
     font-size: 5rem;
-    color: $color_base_theme_dark;
+    color: $color-white;
     font-weight: unset;
     text-align: center;
     @include respond-below(sm) {

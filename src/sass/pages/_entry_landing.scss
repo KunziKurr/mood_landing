@@ -1,0 +1,245 @@
+    .services.landing_entry {
+        background-image: linear-gradient(to right bottom, #cb0888, #0839b1);
+        & .services_wrapper_welcome {
+            background-color: transparent;
+            z-index: 1000;
+            position: relative;
+        }
+        .wave_container {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        & .path_container {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 50vh;
+            &_wrapper {
+                display: flex;
+                height: inherit;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                @include respond-below(xs) {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: end;
+                }
+                &_cont {
+                    width: 45%;
+                    display: flex;
+                    align-content: center;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    @include respond-below(xs) {
+                        width: 80%;
+                    }
+                    &.welcome {
+                        flex-direction: column;
+                        padding-top: 10%;
+                        @include respond-below(xs) {
+                            display: none;
+                        }
+                    }
+                    &.ladies,
+                    &.men {
+                        border-left: 2px solid white;
+                        height: 53%;
+                        border-right: 2px solid white;
+                        border-radius: 4rem;
+                        margin-top: 7%;
+                        @include respond-below(xs) {
+                            height: 17rem;
+                        }
+                    }
+                    & .ladies_container {
+                        display: flex;
+                        flex-direction: column;
+                        width: 60%;
+                        row-gap: 3rem;
+                        @include respond-below(xs) {
+                            row-gap: 0rem;
+                            justify-content: center;
+                        }
+                        &_heading {
+                            font-family: LeGrandRegular-Regular;
+                            font-size: 4rem;
+                            color: #fff;
+                            font-weight: normal;
+                            text-align: start;
+                            @include respond-below(xs) {
+                                font-size: 2.6rem;
+                            }
+                        }
+                        &_co {
+                            font-size: 1.7rem;
+                            font-family: Avenir-Book;
+                            color: #fff;
+                            font-weight: unset;
+                            text-align: start;
+                        }
+                        & .service_bul {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            row-gap: 1rem;
+                            list-style: none;
+                            column-gap: 3rem;
+                            @include respond-below(xs) {
+                                display: none;
+                            }
+                            &_bull {
+                                padding: 0.3rem 1rem;
+                                border-left: 2px solid #edcee7;
+                                border-right: 2px solid #edcee7;
+                                border-radius: 0.6rem;
+                                font-size: 1.2rem;
+                                color: #fff;
+                            }
+                            &_btn {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 42%;
+                                background-color: transparent;
+                                transition: all 0.5s;
+                                // color: #fff;
+                                border-radius: 3rem;
+                                border: 2px solid #ddd;
+                                fill: currentColor;
+                                // color: $color_base_theme;
+                                border: none;
+                                font-family: LeGrandRegular-Regular;
+                                width: fit-content;
+                                font-size: 3rem;
+                                background-color: unset;
+                                column-gap: 1rem;
+                                & svg {
+                                    height: 3vh !important;
+                                }
+                                &:hover {
+                                    border-left: 2px solid #edcee7;
+                                    border-right: 2px solid #edcee7;
+                                    border-radius: 0.6rem;
+                                    padding: 0 2rem;
+                                    svg {
+                                        fill: currentColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &_heading {
+                        font-family: LeGrandRegular-Regular;
+                        font-size: 5rem;
+                        color: #fff;
+                        font-weight: normal;
+                        text-transform: uppercase;
+                        text-align: center;
+                        &.secondary {
+                            font-family: LeGrandRegular-Regular;
+                            font-size: 2.5rem;
+                            text-transform: unset;
+                        }
+                    }
+                    & svg {
+                        height: 25vh;
+                        width: 37%;
+                        &.HER {
+                            @include respond-below(xs) {
+                                height: 12vh !important;
+                                margin-top: 5.7%;
+                            }
+                        }
+                        @include respond-below(xs) {
+                            height: 14vh !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .HER {
+        fill: #ef54b4;
+        height: 23vh !important;
+    }
+    
+    .HIM {
+        fill: #a7bbf3
+    }
+    
+    .men {
+        .ladies_container_heading {
+            color: #a7bbf3 !important;
+            font-family: "Saudagar" !important;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        & button {
+            color: #a7bbf3
+        }
+    }
+    
+    .ladies {
+        .ladies_container_heading {
+            color: #ef54b4 !important;
+            font-family: "Saudagar" !important;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        button {
+            color: #ef54b4
+        }
+    }
+    
+    .path-1 {
+        animation: pathAnim-1 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes pathAnim-1 {
+        0% {
+            d: path("M 0,500 C 0,500 0,333 0,333 C 153.86666666666667,320.8666666666667 307.73333333333335,308.7333333333333 451,324 C 594.2666666666667,339.2666666666667 726.9333333333334,381.93333333333334 890,388 C 1053.0666666666666,394.06666666666666 1246.5333333333333,363.5333333333333 1440,333 C 1440,333 1440,500 1440,500 Z");
+        }
+        25% {
+            d: path("M 0,500 C 0,500 0,333 0,333 C 113.06666666666666,361.4 226.13333333333333,389.8 409,395 C 591.8666666666667,400.2 844.5333333333333,382.2 1028,368 C 1211.4666666666667,353.8 1325.7333333333333,343.4 1440,333 C 1440,333 1440,500 1440,500 Z");
+        }
+        50% {
+            d: path("M 0,500 C 0,500 0,333 0,333 C 173.7333333333333,367 347.4666666666666,401 487,388 C 626.5333333333334,375 731.8666666666666,315 885,298 C 1038.1333333333334,281 1239.0666666666666,307 1440,333 C 1440,333 1440,500 1440,500 Z");
+        }
+        75% {
+            d: path("M 0,500 C 0,500 0,333 0,333 C 138.2666666666667,305.26666666666665 276.5333333333334,277.5333333333333 424,290 C 571.4666666666666,302.4666666666667 728.1333333333332,355.1333333333334 899,369 C 1069.8666666666668,382.8666666666666 1254.9333333333334,357.9333333333333 1440,333 C 1440,333 1440,500 1440,500 Z");
+        }
+        100% {
+            d: path("M 0,500 C 0,500 0,333 0,333 C 153.86666666666667,320.8666666666667 307.73333333333335,308.7333333333333 451,324 C 594.2666666666667,339.2666666666667 726.9333333333334,381.93333333333334 890,388 C 1053.0666666666666,394.06666666666666 1246.5333333333333,363.5333333333333 1440,333 C 1440,333 1440,500 1440,500 Z");
+        }
+    }
+    
+    .path-0 {
+        animation: pathAnim-0 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes pathAnim-0 {
+        0% {
+            d: path("M 0,500 C 0,500 0,166 0,166 C 182.93333333333334,200.13333333333333 365.8666666666667,234.26666666666668 515,222 C 664.1333333333333,209.73333333333332 779.4666666666667,151.06666666666666 928,134 C 1076.5333333333333,116.93333333333334 1258.2666666666667,141.46666666666667 1440,166 C 1440,166 1440,500 1440,500 Z");
+        }
+        25% {
+            d: path("M 0,500 C 0,500 0,166 0,166 C 126.53333333333336,140.4 253.06666666666672,114.8 407,120 C 560.9333333333333,125.2 742.2666666666667,161.2 919,174 C 1095.7333333333333,186.8 1267.8666666666668,176.4 1440,166 C 1440,166 1440,500 1440,500 Z");
+        }
+        50% {
+            d: path("M 0,500 C 0,500 0,166 0,166 C 104.53333333333336,162.53333333333333 209.06666666666672,159.06666666666666 395,173 C 580.9333333333333,186.93333333333334 848.2666666666667,218.26666666666665 1036,220 C 1223.7333333333333,221.73333333333335 1331.8666666666668,193.86666666666667 1440,166 C 1440,166 1440,500 1440,500 Z");
+        }
+        75% {
+            d: path("M 0,500 C 0,500 0,166 0,166 C 165.86666666666667,155.60000000000002 331.73333333333335,145.20000000000002 506,159 C 680.2666666666667,172.79999999999998 862.9333333333334,210.8 1020,216 C 1177.0666666666666,221.2 1308.5333333333333,193.6 1440,166 C 1440,166 1440,500 1440,500 Z");
+        }
+        100% {
+            d: path("M 0,500 C 0,500 0,166 0,166 C 182.93333333333334,200.13333333333333 365.8666666666667,234.26666666666668 515,222 C 664.1333333333333,209.73333333333332 779.4666666666667,151.06666666666666 928,134 C 1076.5333333333333,116.93333333333334 1258.2666666666667,141.46666666666667 1440,166 C 1440,166 1440,500 1440,500 Z");
+        }
+    }
