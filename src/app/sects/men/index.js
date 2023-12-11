@@ -53,7 +53,7 @@ const Men = () => {
 
     return(
     <>
-        <div className="services">
+        <div className="services men">
         <Headers />
             <div className="services_wrapper">
               <div className="services_wrapper_header">
@@ -100,19 +100,19 @@ const Men = () => {
                     </h3>
                     <div className="services_wrapper_transformation_wrapper_services">
                         <div className="service">
-                            <h4 className="service_heading">HAIR STYLING</h4>
+                            <h4 className="service_heading">Shave</h4>
                             <div className="service_line"></div>
                             <button className="service_btn">View More</button>
                         </div>
 
                         <div className="service">
-                            <h4 className="service_heading"> Nails</h4>
+                            <h4 className="service_heading"> Beard Treatment</h4>
                             <div className="service_line"></div>
                             <button className="service_btn">View More</button>
                         </div>
 
                         <div className="service">
-                            <h4 className="service_heading">Eyelashes/Eyebrows</h4>
+                            <h4 className="service_heading">Massages</h4>
                             <div className="service_line"></div>
                             <button className="service_btn">View More</button>
                         </div>
@@ -120,100 +120,7 @@ const Men = () => {
                 </div>
               </div>
               {/* meet our team */}
-              <div className="services_wrapper_meet">
-                <div className="services_wrapper_meet_wrapper">
-                    <h3 className="services_wrapper_meet_wrapper_heading">Our Product line</h3>
-
-
-
-                    <div className="member_wrapper video_prev">
-      <ReactPlayer playing={true} loop={true} url={olaples} width="100%" height="auto" />
-                    </div>
-
-                  <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
-      <SwiperSlide>
-      <div className="member_wrapper">
-                        {/* <div className="member">
-                            <div className="member_initials">
-                                <span className="member_initials_name">Devines </span>
-                                <div className="member_initials_roles">
-                                <span className="member_initials_roles_role">Hair Stylist</span>
-                                <span className="member_initials_roles_role"> Professional Qualified Aesthetician</span>
-                                </div>
-                            </div>
-                        </div> */}
-                        <div className="member">
-                           <img src={Prod1} alt="Mood team members"  />
-                        </div>
-                        {/* <div className="member">
-                            <p className="member_desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Donec elementum elit at tortor tincidunt dignissim. Nam eget venenatis erat.
-                                Nam accumsan nisl eget dignissim blandit.
-                            </p>
-                            <svg id="icon-trending_neutral" viewBox="0 0 24 24">
-    <path d="M21.984 12l-3.984 3.984v-3h-15v-1.969h15v-3z"></path>
-    </svg>
-                        </div> */}
-                    </div>
-      </SwiperSlide>
-      <SwiperSlide> 
-      <div className="member_wrapper">
-      <div className="member_wrapper">
-                        {/* <div className="member">
-                            <div className="member_initials">
-                                <span className="member_initials_name">Devines </span>
-                                <div className="member_initials_roles">
-                                <span className="member_initials_roles_role">Hair Stylist</span>
-                                <span className="member_initials_roles_role"> Professional Qualified Aesthetician</span>
-                                </div>
-                            </div>
-                        </div> */}
-                        <div className="member">
-                           <img src={Prod2} alt="Mood team members"  />
-                        </div>
-                        {/* <div className="member">
-                            <p className="member_desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Donec elementum elit at tortor tincidunt dignissim. Nam eget venenatis erat.
-                                Nam accumsan nisl eget dignissim blandit.
-                            </p>
-                            <svg id="icon-trending_neutral" viewBox="0 0 24 24">
-    <path d="M21.984 12l-3.984 3.984v-3h-15v-1.969h15v-3z"></path>
-    </svg>
-                        </div> */}
-                    </div>
-                    </div>
-      </SwiperSlide> 
-     </Swiper>
-
-
-
-
-
-
-
-
-
-
-
-
-                 
-                </div>
-              </div>
+          
               {/* middle banner */}
               <div className="services_wrapper_banner">
                 <div className="services_wrapper_banner_wrapper">

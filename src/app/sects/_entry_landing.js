@@ -116,13 +116,13 @@ const EntrLanding = () => {
 
               </div> */}
 
-              <div className='wave_container'>
+              {/* <div className='wave_container'>
 
 
               <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="0%" y1="55%" x2="100%" y2="45%"><stop offset="5%" stop-color="#4D0433"></stop><stop offset="95%" stop-color="#031640"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,166 0,166 C 182.93333333333334,200.13333333333333 365.8666666666667,234.26666666666668 515,222 C 664.1333333333333,209.73333333333332 779.4666666666667,151.06666666666666 928,134 C 1076.5333333333333,116.93333333333334 1258.2666666666667,141.46666666666667 1440,166 C 1440,166 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
   <defs><linearGradient id="gradient" x1="0%" y1="55%" x2="100%" y2="45%"><stop offset="5%" stop-color="#340423"></stop><stop offset="95%" stop-color="#031640"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,333 0,333 C 153.86666666666667,320.8666666666667 307.73333333333335,308.7333333333333 451,324 C 594.2666666666667,339.2666666666667 726.9333333333334,381.93333333333334 890,388 C 1053.0666666666666,394.06666666666666 1246.5333333333333,363.5333333333333 1440,333 C 1440,333 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
 
-              </div>
+              </div> */}
 
               <div className="path_container">
                 <div className="path_container_wrapper">
@@ -136,7 +136,7 @@ const EntrLanding = () => {
                        {/* <p className="ladies_container_co">
                        A salon for the woman who wants it all: gorgeousness, Elegance, Flawless skin, and a Fabulous Mood.
                        </p> */}
-                       <ul className="service_bul">
+                       {/* <ul className="service_bul">
                         <li className="service_bul_bull">
                             Hair
                         </li>  
@@ -156,7 +156,7 @@ const EntrLanding = () => {
                             ...More
                         </li>
                         
-                       </ul>
+                       </ul> */}
                        <button className="service_bul_btn"  onClick={()=>{navigate("/ladies")}}>
                            Saloon
                        <svg id="icon-arrow_right_alt" viewBox="0 0 24 24">
@@ -186,7 +186,7 @@ const EntrLanding = () => {
                        {/* <p className="ladies_container_co">
                        A salon for the woman who wants it all: gorgeousness, Elegance, Flawless skin, and a Fabulous Mood.
                        </p> */}
-                       <ul className="service_bul">
+                       {/* <ul className="service_bul">
                         <li className="service_bul_bull">
                             Hair
                         </li>  
@@ -206,7 +206,7 @@ const EntrLanding = () => {
                             ...More
                         </li>
                         
-                       </ul>
+                       </ul> */}
    
 
                        <button className="service_bul_btn" onClick={()=>{navigate("/gents")}}>
