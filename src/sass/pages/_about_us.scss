@@ -28,11 +28,11 @@
             height: inherit;
             &_sect_1_img::after {
                 border: 1px solid #ecae93;
+                border-start-end-radius: 22rem;
                 content: "";
                 position: absolute;
                 height: 56vh;
                 display: flex;
-                border-start-end-radius: 22rem;
                 width: 48vh;
                 left: 16.5%;
                 margin-top: 6%;
@@ -47,6 +47,35 @@
                     position: relative;
                 }
             }
+            &_sect_2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                & .p_content {
+                    font-size: 3.1rem !important;
+                    margin-top: -23%;
+                }
+                & * {
+                    text-align: left !important;
+                }
+            }
         }
     }
+}
+
+.services {
+    &:first-child {
+        background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/team.svg);
+    }
+    &:nth-child(2) {
+        background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/team.svg);
+    }
+    &:nth-child(3) {
+        background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/team.svg);
+    }
+}
+
+.about_us .services_wrapper_transformation_wrapper_services {
+    column-gap: 2.5rem;
+    padding: 0 5%;
 }

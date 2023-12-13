@@ -1,0 +1,51 @@
+.contact_us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &_container {
+        width: inherit;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 8rem;
+        padding: 3% 0;
+        &_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 5rem;
+            & .contact {
+                &_cont {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    &_p {
+                        font-family: LeGrandRegular-Regular;
+                        font-size: 3.25rem;
+                        color: $color_black;
+                        font-weight: unset;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    &_form {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        &_pane {
+            width: 80%;
+            padding: 0 5rem;
+            &:first-child>* {
+                text-align: right;
+            }
+        }
+    }
+    & .services_wrapper_consult_wrapper_container {
+        width: 100%;
+    }
+    & .p_content {
+        width: 100% !important;
+    }
+}
