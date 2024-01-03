@@ -12,21 +12,64 @@
             left: 0;
         }
         & .path_container {
-            // position: absolute;
             bottom: 0;
             right: 0;
             left: 0;
-            // height: 50vh;
+            position: absolute;
+            background-color: #3b3838;
+            height: 25vh;
+            @include respond-below(xs) {
+                height: 40vh;
+            }
             &_wrapper {
                 display: flex;
                 height: inherit;
                 flex-direction: row;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: space-around;
+                &_grid {
+                    &_1 {
+                        @include respond-below(xs) {
+                            width: 100%;
+                        }
+                        width: 50%;
+                        & h4 {
+                            font-family: LeGrandRegular-Regular;
+                            font-size: 7rem;
+                            letter-spacing: 0.5rem;
+                            color: $color_base_theme;
+                            margin-left: 10%;
+                            @include respond-below(xs) {
+                                margin-left: unset;
+                                font-size: 5rem;
+                            }
+                        }
+                    }
+                    &_2 {
+                        @include respond-below(xs) {
+                            width: 100%;
+                        }
+                        width: 50%;
+                        // display: flex;
+                        justify-content: space-between;
+                        & h4 {
+                            font-family: LeGrandRegular-Regular;
+                            font-size: 6rem;
+                            // letter-spacing: 0.5rem;
+                            color: $color_base_theme;
+                            text-transform: capitalize;
+                            @include respond-below(xs) {
+                                font-size: 4rem;
+                            }
+                        }
+                    }
+                }
                 @include respond-below(xs) {
                     flex-direction: column;
                     align-items: center;
-                    justify-content: end;
+                    justify-content: center;
+                    text-align: center;
+                    row-gap: 3rem;
                 }
                 &_cont {
                     width: 45%;
