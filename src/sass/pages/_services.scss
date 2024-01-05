@@ -1,6 +1,7 @@
 .services {
     height: 100vh;
-    overflow-y: scroll;
+    width: 100vw;
+    // overflow-y: scroll;
     background-color: #f4f4f4;
     &_wrapper {
         width: inherit;
@@ -34,16 +35,16 @@
             }
         }
         &_header {
-            height: 75vh;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            row-gap: 2rem;
-            background-image: linear-gradient(to right, #0000008d, #0000008d), url(../../assets/img/2Asset.svg);
-            position: relative;
+            // height: 75vh;
+            // background-size: cover;
+            // background-position: center;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // flex-direction: column;
+            // row-gap: 2rem;
+            // background-image: linear-gradient(to right, #0000008d, #0000008d), url(../../assets/img/2Asset.svg);
+            // position: relative;
             &.service_desc {
                 background-image: linear-gradient(to right, #0000008d, #0000008d), url(../../assets/img/ladies.png);
             }
