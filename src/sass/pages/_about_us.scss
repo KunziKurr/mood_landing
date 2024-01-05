@@ -63,18 +63,17 @@
     }
 }
 
-.services {
-    &:first-child {
-        background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/team.svg);
-    }
-    &:nth-child(2) {
-        background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/team.svg);
-    }
-    &:nth-child(3) {
-        background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/team.svg);
-    }
-}
-
+// .services {
+//     &:first-child {
+//         background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/team.svg);
+//     }
+//     &:nth-child(2) {
+//         background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/team.svg);
+//     }
+//     &:nth-child(3) {
+//         background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/team.svg);
+//     }
+// }
 .about_us .services_wrapper_transformation_wrapper_services {
     column-gap: 2.5rem;
     padding: 0 5%;
