@@ -1,5 +1,5 @@
 import { useLocation,useNavigate } from 'react-router-dom'
-import {useState } from 'react';
+import {useState,useEffect } from 'react';
 import ImageGallery from "react-image-gallery";
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -67,7 +67,44 @@ const EntrLanding = () => {
         //   thumbnail: "https://picsum.photos/id/1019/250/150/",
         },
       ]
+      const targetDate = new Date('February 1, 2024 00:00:00'); // Set your target date here
+      const calculateTimeLeft = () => {
+        const now = new Date();
+        const difference = targetDate - now;
+    
+        if (difference <= 0) {
+          // Target date has passed, you can handle this case as needed
+          return {
+            days: 0,
+            hours: 0,
+            minutes: 0,
+            seconds: 0,
+          };
+        }
+    
+        let days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    
+        return {
+          days,
+          hours,
+          minutes,
+          seconds,
+        };
+      };
 
+      const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+      useEffect(() => {
+        const timer = setInterval(() => {
+          setTimeLeft(calculateTimeLeft());
+        }, 1000);
+    
+        // Clear the interval when the component is unmounted
+        return () => clearInterval(timer);
+      }, [])
 
     return(
         
@@ -116,108 +153,30 @@ const EntrLanding = () => {
 
               </div> */}
 
-              <div className='wave_container'>
+              {/* <div className='wave_container'>
 
 
               <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="0%" y1="55%" x2="100%" y2="45%"><stop offset="5%" stop-color="#4D0433"></stop><stop offset="95%" stop-color="#031640"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,166 0,166 C 182.93333333333334,200.13333333333333 365.8666666666667,234.26666666666668 515,222 C 664.1333333333333,209.73333333333332 779.4666666666667,151.06666666666666 928,134 C 1076.5333333333333,116.93333333333334 1258.2666666666667,141.46666666666667 1440,166 C 1440,166 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
   <defs><linearGradient id="gradient" x1="0%" y1="55%" x2="100%" y2="45%"><stop offset="5%" stop-color="#340423"></stop><stop offset="95%" stop-color="#031640"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,333 0,333 C 153.86666666666667,320.8666666666667 307.73333333333335,308.7333333333333 451,324 C 594.2666666666667,339.2666666666667 726.9333333333334,381.93333333333334 890,388 C 1053.0666666666666,394.06666666666666 1246.5333333333333,363.5333333333333 1440,333 C 1440,333 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
 
-              </div>
+              </div> */}
 
               <div className="path_container">
                 <div className="path_container_wrapper">
-                    <div className="path_container_wrapper_cont ladies" onClick={()=>{navigate("/ladies")}}>
-                    {svgService.HER}
-                  
-                    <div className="ladies_container">
-                       <h2 className="ladies_container_heading">
-                        Mood for Her
-                       </h2>
-                       {/* <p className="ladies_container_co">
-                       A salon for the woman who wants it all: gorgeousness, Elegance, Flawless skin, and a Fabulous Mood.
-                       </p> */}
-                       <ul className="service_bul">
-                        <li className="service_bul_bull">
-                            Hair
-                        </li>  
-                         <li className="service_bul_bull">
-                            Nails
-                        </li>
-                          <li className="service_bul_bull">
-                            Skin Test
-                        </li>  
-                         <li className="service_bul_bull">
-                            Hair Treatment
-                        </li>
-                         <li className="service_bul_bull">
-                            Authentic products
-                        </li>  
-                         <li className="service_bul_bull">
-                            ...More
-                        </li>
-                        
-                       </ul>
-                       <button className="service_bul_btn"  onClick={()=>{navigate("/ladies")}}>
-                           Saloon
-                       <svg id="icon-arrow_right_alt" viewBox="0 0 24 24">
-<path d="M16.031 11.016v-3l3.984 3.984-3.984 3.984v-3h-12.047v-1.969h12.047z"></path>
-</svg>
-                       </button>
-                    </div>
+                   <div className="path_container_wrapper_grid_1">
+                    <h4 className="path_container_wrapper_grid_1_heading">
+                      COMING SOON
+                    </h4>
+                   </div>
 
-                    </div>
-                    <div className="path_container_wrapper_cont welcome">
-                 
-        <h1 className="path_container_wrapper_cont_heading">
-         Welcome to Mood
-        </h1>
-           <h2 className="path_container_wrapper_cont_heading secondary">
-           Your one-stop shop for style and grooming.
-        </h2>
-                    </div>
+                   <div className="path_container_wrapper_grid_2">
+                    {/* <h4 className="path_container_wrapper_grid_2_heading">
+                      COUNT DOWN
+                    </h4> */}
+                    <h4>{timeLeft.days} Days, {timeLeft.hours} Hrs, {timeLeft.minutes} Min, {timeLeft.seconds} Secs</h4>
+                   </div>
 
-                    <div className="path_container_wrapper_cont men" onClick={()=>{navigate("/gentlemen")}}>
-                    {svgService.HIM}
-                  
-                    <div className="ladies_container">
-                       <h2 className="ladies_container_heading">
-                        Mood for Him
-                       </h2>
-                       {/* <p className="ladies_container_co">
-                       A salon for the woman who wants it all: gorgeousness, Elegance, Flawless skin, and a Fabulous Mood.
-                       </p> */}
-                       <ul className="service_bul">
-                        <li className="service_bul_bull">
-                            Hair
-                        </li>  
-                         <li className="service_bul_bull">
-                            Nails
-                        </li>
-                          <li className="service_bul_bull">
-                            Skin Test
-                        </li>  
-                         <li className="service_bul_bull">
-                            Hair Treatment
-                        </li>
-                         <li className="service_bul_bull">
-                            Authentic products
-                        </li>  
-                         <li className="service_bul_bull">
-                            ...More
-                        </li>
-                        
-                       </ul>
-   
-
-                       <button className="service_bul_btn" onClick={()=>{navigate("/gents")}}>
-                          Gents
-                       <svg id="icon-arrow_right_alt" viewBox="0 0 24 24">
-                        <path d="M16.031 11.016v-3l3.984 3.984-3.984 3.984v-3h-12.047v-1.969h12.047z"></path>
-                        </svg>
-                       </button>
-                    </div>
-
-                    </div>
+                  {/* Updated */}
 
 
                 </div>

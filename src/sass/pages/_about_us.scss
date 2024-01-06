@@ -1,0 +1,82 @@
+.about_us_img {
+    // &::before {
+    //     content: "";
+    //     height: inherit;
+    //     width: inherit;
+    // }
+}
+
+.about_us {
+    & .landing_lux_wrapper {
+        height: 100vh;
+    }
+    & .landing_wrapper_svg {
+        &::before {
+            content: "";
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            background-color: #140c0c4d;
+        }
+    }
+    &_container {
+        height: 70vh;
+        &_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: inherit;
+            &_sect_1_img::after {
+                border: 1px solid #ecae93;
+                border-start-end-radius: 22rem;
+                content: "";
+                position: absolute;
+                height: 56vh;
+                display: flex;
+                width: 48vh;
+                left: 16.5%;
+                margin-top: 6%;
+            }
+            & div {
+                height: inherit;
+                display: inherit;
+                & img {
+                    border-start-end-radius: 27rem;
+                    padding: 7rem;
+                    width: 57rem;
+                    position: relative;
+                }
+            }
+            &_sect_2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                & .p_content {
+                    font-size: 3.1rem !important;
+                    margin-top: -23%;
+                }
+                & * {
+                    text-align: left !important;
+                }
+            }
+        }
+    }
+}
+
+// .services {
+//     &:first-child {
+//         background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/team.svg);
+//     }
+//     &:nth-child(2) {
+//         background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/team.svg);
+//     }
+//     &:nth-child(3) {
+//         background-image: linear-gradient(to right, #00000046, #0000008d), url(../../assets/img/team.svg);
+//     }
+// }
+.about_us .services_wrapper_transformation_wrapper_services {
+    column-gap: 2.5rem;
+    padding: 0 5%;
+}
+
+// Addes fix

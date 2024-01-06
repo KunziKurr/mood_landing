@@ -60,6 +60,9 @@
     &.white {
         color: #fff;
     }
+    &.black {
+        color: $color_black;
+    }
 }
 
 .p_content {
@@ -72,6 +75,9 @@
     margin: 2rem 0;
     &.white {
         color: #fff;
+    }
+    &.black {
+        color: #000;
     }
 }
 

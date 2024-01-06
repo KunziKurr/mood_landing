@@ -122,3 +122,17 @@
         }
     }
 } //
+.men {
+    & .mood_header {
+        &_menu {
+            width: inherit;
+            height: 8rem;
+            &_wrapper {
+                background-image: linear-gradient(to right, rgb(0 0 0 / 0%), rgb(37 21 14 / 81%));
+                &_logo {
+                    & img {}
+                }
+            }
+        }
+    }
+}
