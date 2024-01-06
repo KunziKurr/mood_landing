@@ -176,7 +176,7 @@ const EntrLanding = () => {
                     <h4>{timeLeft.days} Days, {timeLeft.hours} Hrs, {timeLeft.minutes} Min, {timeLeft.seconds} Secs</h4>
                    </div>
 
-                  
+                  {/* Updated */}
 
 
                 </div>
