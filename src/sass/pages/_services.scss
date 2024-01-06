@@ -485,3 +485,7 @@
     display: flex;
     width: 100vw;
 }
+
+.image-gallery-slide {
+    transition: all 3750ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}

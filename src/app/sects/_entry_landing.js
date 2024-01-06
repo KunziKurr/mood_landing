@@ -121,12 +121,16 @@ const EntrLanding = () => {
                     showBullets={false} 
                     showFullscreenButton={false} 
                     showPlayButton={false}
-                    showNav={false}
+                    showNav={true}
                     onImageMouseOver={handleMouseOver}
                     onImageMouseLeave={handleMouseLeave}
                     autoPlay={!isSlideshowPaused}
                     originalHeight ={true}
                     originalWidth ={true}
+                    slideDuration={3750}
+                    slideInterval={700}
+                    flickThreshold={0.75}
+                    swipingTransitionDuration={100}
 
                  />
                {/* <div className="non_slider">
