@@ -12,6 +12,14 @@
         // justify-content: center;
         height: 100vh;
         overflow: hidden;
+        @include respond-below(sm) {
+            display: grid;
+            flex-direction: column;
+            align-items: stretch;
+            height: 100vh;
+            overflow: hidden;
+            grid-template-rows: 2fr 1fr;
+        }
         &_services {
             &_ul {
                 width: 60%;
@@ -45,8 +53,8 @@
             height: 75vh;
             max-height: 75vh;
             @include respond-below(sm) {
-                height: 60vh;
-                max-height: 60vh;
+                height: unset;
+                max-height: unset;
             }
             // background-size: cover;
             // background-position: center;
@@ -301,7 +309,7 @@
                 row-gap: 3rem;
                 flex-direction: column;
                 @include respond-below(sm) {
-                    height: 40vh;
+                    height: unset;
                 }
                 & p {
                     position: relative;
