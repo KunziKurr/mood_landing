@@ -9,7 +9,7 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        justify-content: center;
+        // justify-content: center;
         height: 100vh;
         overflow: hidden;
         &_services {
@@ -43,6 +43,7 @@
         &_header {
             // confirm in desktoop view
             height: 75vh;
+            max-height: 75vh;
             // background-size: cover;
             // background-position: center;
             // display: flex;

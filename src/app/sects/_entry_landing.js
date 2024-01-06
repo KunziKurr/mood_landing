@@ -125,6 +125,8 @@ const EntrLanding = () => {
                     onImageMouseOver={handleMouseOver}
                     onImageMouseLeave={handleMouseLeave}
                     autoPlay={!isSlideshowPaused}
+                    originalHeight ={true}
+                    originalWidth ={true}
 
                  />
                {/* <div className="non_slider">
