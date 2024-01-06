@@ -4,8 +4,14 @@
     // overflow-y: scroll;
     background-color: #f4f4f4;
     &_wrapper {
-        width: inherit;
         background-color: #f4f4f4;
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
         &_services {
             &_ul {
                 width: 60%;
@@ -36,7 +42,7 @@
         }
         &_header {
             // confirm in desktoop view
-            // height: 75vh;
+            height: 75vh;
             // background-size: cover;
             // background-position: center;
             // display: flex;
