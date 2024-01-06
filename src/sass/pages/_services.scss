@@ -56,7 +56,7 @@
                 background-image: linear-gradient(to right, #0000008d, #0000008d), url(../../assets/img/ladies.png);
             }
             @include respond-below(sm) {
-                height: 60vh;
+                // height: 60vh;
             }
             &_subheadings {
                 font-family: LeGrandRegular-Regular;
