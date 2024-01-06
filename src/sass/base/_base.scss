@@ -84,3 +84,11 @@ button {
  ::-webkit-scrollbar-thumb:hover {
     background: #672f9495;
 }
+
+.root,
+.mood_landing {
+    height: 100vh;
+    @include respond-below(xs) {
+        overflow: hidden;
+    }
+}
