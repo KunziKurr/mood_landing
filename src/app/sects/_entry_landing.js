@@ -127,8 +127,8 @@ const EntrLanding = () => {
                     autoPlay={!isSlideshowPaused}
                     originalHeight ={true}
                     originalWidth ={true}
-                    slideDuration={3750}
-                    slideInterval={700}
+                    slideDuration={3200}
+                    slideInterval={5000}
                     flickThreshold={0.75}
                     swipingTransitionDuration={100}
 
