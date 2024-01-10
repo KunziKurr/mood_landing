@@ -25,13 +25,13 @@ const App = () => {
   let routes = useRoutes([
     { path: "/landing", element: <Landing /> },
     { path: "urban", element: <UrbanLux /> },
-    { path: "/", element: <EntrLanding /> },
+    { path: "/entry", element: <EntrLanding /> },
     { path: "about-us", element: <About /> },
     { path: "serve", element: <ServicesDesc /> },
     { path: "contact-us", element: <Contact /> },
     { path: "booking", element: <Booking /> },
     { path: "welcome", element: <EntrLanding /> },
-    { path: "ladies", element: <Ladies /> },
+    { path: "/", element: <Ladies /> },
     { path: "gentlemen", element: <Men /> },
     // ...
   ]);

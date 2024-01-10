@@ -126,9 +126,9 @@ const Ladies = () => {
 
 
 
-                    <div className="member_wrapper video_prev">
+                    {/* <div className="member_wrapper video_prev">
       <ReactPlayer playing={true} loop={true} url={olaples} width="100%" height="auto" />
-                    </div>
+                    </div> */}
 
                   <Swiper
         spaceBetween={30}
