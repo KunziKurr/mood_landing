@@ -53,7 +53,7 @@ const Ladies = () => {
 
     return(
     <>
-        <div className="services">
+        <div className="services home">
         <Headers />
             <div className="services_wrapper">
               <div className="services_wrapper_header">

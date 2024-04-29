@@ -1,5 +1,6 @@
 {
     "name": "mood_landing",
+    "homepage": "https://www.mood-ke.co.ke/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
